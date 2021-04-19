@@ -32,11 +32,12 @@ const Hooks = () => {
     console.log(book)
     const getBookDetails = books.filter(function(result){
         return result.available === book;
-     
     });
 
+    console.log(getBookDetails)
+
     return(
-        <di>
+        <div>
             <form onSubmit={handleSubmitCourse}>
                 <br/>
                 <br/>
@@ -73,7 +74,7 @@ const Hooks = () => {
                     </tbody>
                 </Table>
             </form>
-        </di>
+        </div>
     )
 }
 
